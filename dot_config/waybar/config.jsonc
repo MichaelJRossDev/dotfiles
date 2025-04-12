@@ -1,0 +1,56 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "battery", "cpu", "memory", "backlight", "custom/power"],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "hyprctl dispatch workspace {id}",
+    "all-outputs": true
+  },
+
+  "clock": {
+    "format": " {:%H:%M}",
+    "tooltip-format": "{:%A, %B %d, %Y}",
+    "interval": 60
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " Muted",
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": " {essid}",
+    "format-ethernet": "󰈀 {ipaddr}",
+    "format-disconnected": "󰤭 Disconnected"
+  },
+
+  "battery": {
+    "format": " {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-full": " {capacity}%",
+    "interval": 30
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "format": " {used:0.1f}GB"
+  },
+
+  "backlight": {
+    "format": " {percent}%"
+  },
+
+  "custom/power": {
+    "format": "",
+    "on-click": "shutdown now"
+  }
+}
+

@@ -1,0 +1,106 @@
+@import "./everforest.css";
+
+* {
+    font-family: "BlexMono Nerd Font Propo";
+    font-size: 16px;
+    min-height: 10px;
+}
+
+window#waybar {
+    background: @background_0;
+    color: @foreground;
+}
+
+#workspaces button {
+    background: @background_1;
+	color: @foreground;
+    padding: 5px;
+    margin: 3px;
+}
+
+#workspaces button.active {
+    background: @yellow;
+    color: @background_1;
+}
+
+#clock {
+    background: @background_1;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#cpu {
+    background: @background_1;
+    color: @blue;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#memory {
+    background: @background_1;
+    color: @orange;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#battery {
+    background: @background_1;
+    color: @purple;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#network {
+    background: @background_1;
+    color: @yellow;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#pulseaudio {
+    background: @background_1;
+    color: @green;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#backlight {
+    background: @background_1;
+    color: @aqua;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#battery.charging {
+    color: @yellow;
+}
+
+#battery.warning {
+    color: @red;
+}
+
+#pulseaudio.muted {
+    color: @gray_1;
+}
+
+#custom-power {
+    background: @background_1;
+    color: @red;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#custom-power:hover {
+    background: @red;
+	color: @background_1;
+}
+
