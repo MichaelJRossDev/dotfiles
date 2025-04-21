@@ -24,7 +24,7 @@ return {
 			dashboard.button("p", "🚀  Projects", ":Telescope projects<CR>"),
 			dashboard.button("o", "📂  Open Oil", ":Oil<CR>"),
 			dashboard.button("r", "⏳  Recent Files", ":Telescope oldfiles<CR>"),
-			dashboard.button("n", "📝 New File", ":enew<CR>"),
+			dashboard.button("n", "📝  New File", ":enew<CR>"),
 			dashboard.button("q", "🚫  Quit", ":qa<CR>"),
 		}
 

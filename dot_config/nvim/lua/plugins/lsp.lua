@@ -91,5 +91,15 @@ return {
 			{ "[d",         "<cmd>Lspsaga diagnostic_jump_prev<CR>",       desc = "Prev Diagnostic (Lspsaga)" },
 			{ "]d",         "<cmd>Lspsaga diagnostic_jump_next<CR>",       desc = "Next Diagnostic (Lspsaga)" },
 		},
+	},
+	{
+		"ray-x/lsp_signature.nvim",
+		event = "InsertEnter",
+		opts = {
+			bind = true,
+			handler_opts = {
+				border = "rounded"
+			}
+		},
 	}
 }
